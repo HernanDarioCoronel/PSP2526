@@ -1,0 +1,38 @@
+[
+  {
+    "numSala": 101,
+    "limiteTemperatura": 25.5,
+    "orientacion": 1,
+    "nome": "A101"
+  },
+  {
+    "numSala": 102,
+    "limiteTemperatura": 26.0,
+    "orientacion": 2,
+    "nome": "S102"
+  },
+  {
+    "numSala": 201,
+    "limiteTemperatura": 24.0,
+    "orientacion": 0,
+    "nome": "D201"
+  },
+  {
+    "numSala": 202,
+    "limiteTemperatura": 27.0,
+    "orientacion": 3,
+    "nome": "T202"
+  },
+  {
+    "numSala": 301,
+    "limiteTemperatura": 23.0,
+    "orientacion": 1,
+    "nome": "L301"
+  },
+  {
+    "numSala": 302,
+    "limiteTemperatura": 26.5,
+    "orientacion": 2,
+    "nome": "A302"
+  }
+]
