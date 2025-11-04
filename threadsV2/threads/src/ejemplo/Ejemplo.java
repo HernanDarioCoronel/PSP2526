@@ -31,7 +31,7 @@ public class Ejemplo {
 
                try {
                   String line;
-                  while((line = br.readLine()) != null) {
+                  while ((line = br.readLine()) != null) {
                      System.out.println(line);
                   }
 
@@ -52,7 +52,7 @@ public class Ejemplo {
                   var4.addSuppressed(var19);
                }
 
-               //throw var4;
+               throw new InterruptedException();
             }
          } catch (InterruptedException var20) {
             var20.printStackTrace();
