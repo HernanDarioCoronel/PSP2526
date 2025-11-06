@@ -22,7 +22,5 @@ public class Emisor {
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
-
-
     }
 }
