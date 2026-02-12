@@ -2,18 +2,25 @@ package dam.dual;
 
 import java.io.*;
 import java.net.*;
+import java.util.Scanner;
 
 public class Cliente {
     private static final String HOST = "localhost";
     private static final int PUERTO = 5000;
 
     public static void main(String[] args) {
-        String archivoSolicitado = "streamsockets.pdf";
+        String archivoSolicitado = "Exercicio 2.1 Spring Boot_DDD.pdf";
+
 
         try (Socket socket = new Socket(HOST, PUERTO);
              DataOutputStream salida = new DataOutputStream(socket.getOutputStream());
-             DataInputStream entrada = new DataInputStream(socket.getInputStream())) {
-
+             DataInputStream entrada = new DataInputStream(socket.getInputStream());
+             Scanner sc = new Scanner(System.in)
+        ) {
+            /*
+                System.out.println("Ingrese el archivo que desea descargar: ");
+                archivoSolicitado = sc.nextLine();
+            */
             salida.writeUTF(archivoSolicitado);
 
             boolean existe = entrada.readBoolean();
